@@ -146,13 +146,13 @@ A window similar to the one below should appear in a few seconds:
 
 The CourseBook interface has several key areas:
 
-![UI Overview](images/interface.jpg)
+![UI Overview](images/UiClassDiagram.png)
 *Figure 2: CourseBook UI components breakdown.*
 
 1. **Command Box** (top): Type your commands here and press Enter to execute
 2. **Result Display** (below command box): Shows feedback and results from your commands
-3. **Person List Panel** (right): Displays contacts matching your current view/filter
-4. **Course View Panel** (left): Shows all courses with enrollment counts
+3. **Person List Panel** (left): Displays contacts matching your current view/filter
+4. **Course View Panel** (right): Shows all courses with enrollment counts
 5. **Copy Button** (on each person card): Click to copy phone number to clipboard
 
 ### Step 5: Try Your First Commands
@@ -399,7 +399,7 @@ Before deletion, a confirmation dialog appears showing the contacts to be delete
 
 **:exclamation: Warning:**
 
-
+* This action is irreversible after confirmation (except via `undo`).
 * Make sure you review the confirmation dialog carefully before clicking "OK".
 
 </div>
@@ -455,6 +455,7 @@ delete 1
 
 **Expected Output (before confirmation):**
 ![Delete Confirmation](images/confirmation.jpg)
+
 *Figure 5: Delete confirmation screen for singular person,*
 
 **Expected Output (after confirmation):**
@@ -465,11 +466,13 @@ Deleted Person: John Doe; Phone: 98765432; Email: johnd@example.com; Address: Jo
 **Expected Output (multiple deletions):**
     
 ![Multiple Delete Confirmation](images/multiple_confirm.jpg)
+
 *Figure 6: Delete confirmation screen for multiple persons.*
 
 **Expected Output (with warnings):**
 
 ![Delete Warning](images/delete_warning.jpg)
+
 *Figure 7: Delete confirmation screen for multiple persons and invalid index provided.*
 
 **Error Messages:**
@@ -1092,17 +1095,24 @@ theme blue
 ```
 ![Theme Blue](images/ThemeBlue.png)
 *Figure 12: Changes to blue theme.*
+
+<br>
+
 ```
 theme dark
 ```
 ![Theme Dark](images/ThemeDark.png)
 *Figure 13: Changes to dark theme.*
 
+<br>
+
 ```
 theme love
 ```
 ![Theme Love](images/ThemeLove.png)
 *Figure 14: Changes to love theme.*
+
+<br>
 
 ```
 theme tree
@@ -1487,6 +1497,7 @@ Redo success!
 Each person card has a copy button on the right side that copies the phone number to your clipboard.
 
 ![Copy Button](images/copy.jpg)
+
 *Figure 18: Copy person's phone number to clipboard.*
 
 **How to use:**
