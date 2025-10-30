@@ -220,7 +220,7 @@ public class ParserUtil {
         String trimmedOrder = order.trim();
 
         if (!trimmedOrder.equals("asc") && !trimmedOrder.equals("desc")) {
-            throw new ParseException("Invalid sort order. Use only 'asc' or 'desc'.");
+            throw new ParseException("Invalid sort order. Use only 'asc' or 'desc' (case-sensitive).");
         }
         return trimmedOrder;
     }
