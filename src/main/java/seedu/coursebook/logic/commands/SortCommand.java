@@ -16,7 +16,7 @@ public class SortCommand extends Command {
     public static final String COMMAND_WORD = "sortn";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Sorts the contact list by name.\n"
-            + "Parameters: by/ [asc|desc]\n"
+            + "Parameters: by/ [asc|desc] (case-sensitive)\n"
             + "Example: " + COMMAND_WORD + " by/ asc";
 
     private static final Logger logger = Logger.getLogger(SortCommand.class.getName());

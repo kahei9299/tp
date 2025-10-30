@@ -22,6 +22,11 @@ public class SortCommandParser implements Parser<SortCommand> {
         ArgumentMultimap argMultimap =
                 ArgumentTokenizer.tokenize(args, PREFIX_SORT);
 
+        // reject unexpected preamble
+        if (!argMultimap.getPreamble().isEmpty()) {
+            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, SortCommand.MESSAGE_USAGE));
+        }
+
         // must have only one by/
         if (argMultimap.getAllValues(PREFIX_SORT).size() > 1) {
             throw new ParseException(String.format(MESSAGE_SINGLE_ORDER_ONLY, SortCommand.MESSAGE_USAGE));
