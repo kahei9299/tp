@@ -71,6 +71,12 @@ public class FindCommandParser implements Parser<FindCommand> {
         boolean anyPrefixedProvided = !(nameKeywords.isEmpty() && phoneKeywords.isEmpty()
                 && emailKeywords.isEmpty() && addressKeywords.isEmpty() && tagKeywords.isEmpty());
 
+        // Reject any preamble when any supported prefix is used
+        String preamble = argMultimap.getPreamble().trim();
+        if (anyPrefixedProvided && !preamble.isEmpty()) {
+            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, FindCommand.MESSAGE_USAGE));
+        }
+
         if (!anyPrefixedProvided) {
             // Fallback to legacy behavior: treat entire args as name keywords
             String[] keywords = trimmedArgs.split("\\s+");

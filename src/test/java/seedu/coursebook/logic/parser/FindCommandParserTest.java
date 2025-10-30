@@ -99,6 +99,18 @@ public class FindCommandParserTest {
     }
 
     @Test
+    public void parse_preambleWithAllowedPrefix_throwsParseException() {
+        assertParseFailure(parser, "foo t/fri",
+                String.format(MESSAGE_INVALID_COMMAND_FORMAT, FindCommand.MESSAGE_USAGE));
+        assertParseFailure(parser, "bar n/Alice",
+                String.format(MESSAGE_INVALID_COMMAND_FORMAT, FindCommand.MESSAGE_USAGE));
+        assertParseFailure(parser, "Alice p/9123",
+                String.format(MESSAGE_INVALID_COMMAND_FORMAT, FindCommand.MESSAGE_USAGE));
+        assertParseFailure(parser, "  foo   n/John",
+                String.format(MESSAGE_INVALID_COMMAND_FORMAT, FindCommand.MESSAGE_USAGE));
+    }
+
+    @Test
     public void parse_disallowedKnownPrefixes_throwsParseException() {
         assertParseFailure(parser, "b/2020-01-01",
                 String.format(MESSAGE_INVALID_COMMAND_FORMAT, FindCommand.MESSAGE_USAGE));
