@@ -977,7 +977,7 @@ CourseBook uses a **two-phase deletion** process:
 
 ---
 
-## **10. Logging**
+## 10. Logging
 
 ### 10.1 Logging Infrastructure
 
@@ -1037,7 +1037,7 @@ Log level is configured in `config.json`:
 
 ---
 
-## **11. Configuration**
+## 11. Configuration
 
 Refer to the guide [_Configuration guide_](Configuration.md).
 
@@ -1058,7 +1058,7 @@ Refer to the guide [_Configuration guide_](Configuration.md).
 
 ---
 
-## **13. Appendix: Requirements**
+## 13. Appendix: Requirements
 
 ### 13.1 Product Scope
 
@@ -1432,7 +1432,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ---
 
-## **14. Appendix: Effort**
+## 14. Appendix: Effort
 
 ### 14.1 Difficulty Level
 
@@ -1531,7 +1531,7 @@ CourseBook represents a **moderate to high difficulty** extension of AB3. While 
 
 ---
 
-## **15. Appendix: Planned Enhancements**
+## 15. Appendix: Planned Enhancements
 
 ### Team Size: 5
 
@@ -1656,7 +1656,7 @@ CourseBook represents a **moderate to high difficulty** extension of AB3. While 
 
 ---
 
-## **16. Summary**
+## 16. Summary
 
 CourseBook is a robust, well-architected application for managing academic contacts. This Developer Guide provides comprehensive documentation of the system's design, and implementation. Key highlights:
 
