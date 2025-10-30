@@ -455,6 +455,7 @@ delete 1
 
 **Expected Output (before confirmation):**
 ![Delete Confirmation](images/confirmation.jpg)
+
 *Figure 5: Delete confirmation screen for singular person,*
 
 **Expected Output (after confirmation):**
@@ -465,11 +466,13 @@ Deleted Person: John Doe; Phone: 98765432; Email: johnd@example.com; Address: Jo
 **Expected Output (multiple deletions):**
     
 ![Multiple Delete Confirmation](images/multiple_confirm.jpg)
+
 *Figure 6: Delete confirmation screen for multiple persons.*
 
 **Expected Output (with warnings):**
 
 ![Delete Warning](images/delete_warning.jpg)
+
 *Figure 7: Delete confirmation screen for multiple persons and invalid index provided.*
 
 **Error Messages:**
@@ -1092,17 +1095,24 @@ theme blue
 ```
 ![Theme Blue](images/ThemeBlue.png)
 *Figure 12: Changes to blue theme.*
+
+<br>
+
 ```
 theme dark
 ```
 ![Theme Dark](images/ThemeDark.png)
 *Figure 13: Changes to dark theme.*
 
+<br>
+
 ```
 theme love
 ```
 ![Theme Love](images/ThemeLove.png)
 *Figure 14: Changes to love theme.*
+
+<br>
 
 ```
 theme tree
@@ -1487,6 +1497,7 @@ Redo success!
 Each person card has a copy button on the right side that copies the phone number to your clipboard.
 
 ![Copy Button](images/copy.jpg)
+
 *Figure 18: Copy person's phone number to clipboard.*
 
 **How to use:**
