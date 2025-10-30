@@ -456,7 +456,7 @@ delete 1
 **Expected Output (before confirmation):**
 ![Delete Confirmation](images/confirmation.jpg)
 
-*Figure 5: Delete confirmation screen for singular person,*
+*Figure 5: Delete confirmation screen for singular person.*
 
 **Expected Output (after confirmation):**
 ```
